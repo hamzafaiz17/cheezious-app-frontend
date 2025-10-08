@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "name": "Bhook Ka The End!",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Starters",
+    "items": [
+      {
+        "id": 1,
+        "name": "Cheezy Sticks",
+        "description": "Freshly baked bread filled with the yummiest Cheese blend to satisfy your cravin...",
+        "price": 630,
+        "image": "/images/Cheezy-Sticks.png"
+      },
+      {
+        "id": 2,
+        "name": "Behari Rolls",
+        "description": "Tender, Spicy Chicken Strips... ",
+        "price": 630,
+        "image": "/images/Behari-Rolls.png"
+      },
+      {
+        "id": 3,
+        "name": "Oven Baked Wings",
+        "description": "Fresh Oven baked wings served with Dip Sauce.",
+        "price": 600,
+        "image": "/images/OvenBaked-Wings.png"
+      },
+      {
+        "id": 4,
+        "name": "Flaming Wings",
+        "description": "Fresh oven baked wings tossed in hot Peri Peri Sauce and served with Dip Sauce.",
+        "price": 650,
+        "image": "/images/Flaming-Wings.png"
+      },
+      {
+        "id": 5,
+        "name": "Calzone Chunks",
+        "description": "4 pcs Stuffed Calzone Chunks served with Sauce & Fries.",
+        "price": 1150,
+        "image": "/images/Calzone-Chunks.png"
+      },
+      {
+        "id": 6,
+        "name": "Arabic Rolls",
+        "description": "4 pcs Arabic Rolls stuffed with the yummiest mix served with sauce.",
+        "price": 690,
+        "image": "/images/Arabic-Rolls.png"
+      },
+      {
+        "id": 7,
+        "name": "Behari Rolls",
+        "description": "4 pcs Behari Rolls stuffed with the yummiest mix served with sauce.",
+        "price": 690,
+        "image": "/images/Behari-Rolls.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Somewhat Local",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Somewhat Sooper",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cheezy Treats",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pizza Deals",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sandwiches & Platters",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Special Pizza",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Somewhat Amazing",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Pastas",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Burgerz",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Side Orders",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Addons",
+    "items": [
+      {
+        "id": 1,
+        "name": "Bazooka",
+        "description": "Tender, spicy chicken strips paired with mayo, pickles, jalapeños, and signature stacker s...",
+        "price": 630,
+        "image": "https://cheezious.com/_next/image?url=http%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fproducts%2F1726048358599-Bazooka%20400x400.jpg&w=1920&q=75"
+      }
+    ]
+  }
+]

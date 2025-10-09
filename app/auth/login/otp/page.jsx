@@ -5,7 +5,7 @@ import {
   InputOTPSeparator,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
-import OTPVerification from "@/app/auth/api/opt-verification";
+import OTPVerification from "@/app/auth/api/opt-verification.jsx";
 import { useRouter } from "next/navigation";
 export default function OTPLogin() {
   const router = useRouter();

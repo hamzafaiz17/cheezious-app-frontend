@@ -41,35 +41,55 @@ import { MinusIcon, PlusIcon, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
 import Map from "@/app/components/map";
+import { useEffect, useState } from "react";
 export default function HeaderS() {
-  let router = useRouter();
-  let token = localStorage.getItem("token");
-  let user = localStorage.getItem("user");
-  function isJwtExpired(token) {
-    if (!token) return true; // Token missing
+  const [loginuser, setLoginUser] = useState(null);
+  const [tokenExpired, setTokenExpired] = useState(true);
+  const [token, setToken] = useState(null);
+  const [user, setUser] = useState(null);
+  const router = useRouter();
 
-    try {
-      const payloadBase64 = token.split(".")[1]; // JWT ka 2nd part (payload)
-      const decodedPayload = JSON.parse(atob(payloadBase64)); // Base64 decode
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("token");
+      const user = localStorage.getItem("user");
+      setToken(token);
+      setUser(user);
 
-      const expiryTime = decodedPayload.exp; // expiry in seconds
-      const currentTime = Math.floor(Date.now() / 1000); // current time in seconds
+      function isJwtExpired(jwt) {
+        if (!jwt) return true;
+        try {
+          const payloadBase64 = jwt.split(".")[1];
+          const decodedPayload = JSON.parse(atob(payloadBase64));
+          const expiryTime = decodedPayload.exp;
+          const currentTime = Math.floor(Date.now() / 1000);
+          return expiryTime < currentTime;
+        } catch (error) {
+          console.error("Token decode error:", error);
+          return true;
+        }
+      }
 
-      return expiryTime < currentTime;
-    } catch (error) {
-      console.error("Token decode error:", error);
-      return true; // If error, assume token is invalid
+      const expired = isJwtExpired(token);
+      setTokenExpired(expired);
+
+      if (user) {
+        try {
+          setLoginUser(JSON.parse(user));
+        } catch (error) {
+          console.error("User parse error:", error);
+        }
+      }
     }
-  }
-  token = isJwtExpired(token);
+  }, []);
 
   function Logout() {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-    router.push("/auth/login");
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
+      router.push("/auth/login");
+    }
   }
-
-  let loginuser = JSON.parse(user);
 
   const { cart, addToCart, removeFromCart, increment, decrement } = useCart();
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);

@@ -1,5 +1,4 @@
 import axios from "axios";
-import { set } from "react-hook-form";
 export default function fetchUser(
   apiEndpoint,
   user,

@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/card";
 import { Toaster } from "@/components/ui/sonner";
 import OTPVerificationAPI from "@/app/auth/api/opt-verification.jsx";
-export default function OTPVerification() {
+export default function OTPVerificationForm() {
   const handleVerify = (value) => {
     let baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
     let apiVersion = process.env.NEXT_PUBLIC_API_VERSION;

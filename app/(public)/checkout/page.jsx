@@ -27,10 +27,10 @@ export default function CartPage() {
       return true; // If error, assume token is invalid
     }
   }
-  const token = localStorage.getItem("token");
-  let user = localStorage.getItem("user");
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    let user = localStorage.getItem("user");
     if (!token || !user || isJwtExpired(token)) {
       router.replace("/auth/login");
     } else {

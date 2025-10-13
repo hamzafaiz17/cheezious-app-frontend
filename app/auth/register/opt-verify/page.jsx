@@ -1,4 +1,5 @@
-import { OTPVerificationForm } from "@/components/otp-verification-form.jsx";
+"use client";
+import OTPVerificationForm from "@/components/otp-verification-form.jsx";
 
 export default function SignUpPage() {
   return (

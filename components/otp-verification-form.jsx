@@ -23,7 +23,6 @@ export default function OTPVerificationForm() {
       otp: value,
       email: localStorage.getItem(email),
     };
-    console.log(user);
     OTPVerificationAPI(APIEndpoint, user);
   };
 
@@ -40,7 +39,6 @@ export default function OTPVerificationForm() {
         <CardContent>
           <InputOTP
             maxLength={6}
-            value={otp}
             onChange={(value) => {
               if (value.length === 6) {
                 handleVerify(value);

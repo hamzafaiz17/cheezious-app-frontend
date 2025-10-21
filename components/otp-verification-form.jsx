@@ -13,13 +13,28 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Toaster } from "@/components/ui/sonner";
-import OTPVerificationAPI from "@/app/auth/api/opt-verification.jsx";
-import { useRouter } from "next/navigation";
-function OTPVerificationForm() {
-  const router = useRouter();
+import OTPVerificationAPI from "@/app/auth/api/opt-verification";
+export default function OTPVerificationForm() {
   const handleVerify = (value) => {
-    // OTPVerificationAPI expects (otp, router)
-    OTPVerificationAPI(value, router);
+    let baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
+    let apiVersion = process.env.NEXT_PUBLIC_API_VERSION;
+    let APIEndpoint = baseURL + apiVersion + "auth/verify-otp";
+    let storedEmail = null;
+    if (typeof window !== "undefined" && window.localStorage) {
+      storedEmail = localStorage.getItem("email");
+    }
+
+    const user = {
+      otp: value,
+      email: storedEmail,
+    };
+
+    try {
+      OTPVerificationAPI(APIEndpoint, user);
+    } catch (err) {
+      // swallow to avoid module evaluation errors during build
+      console.error("OTP verification failed:", err);
+    }
   };
 
   return (
@@ -58,7 +73,3 @@ function OTPVerificationForm() {
     </div>
   );
 }
-
-// export both default and named so imports in different styles work (fixes Vercel/Next build issues)
-export default OTPVerificationForm;
-export { OTPVerificationForm };

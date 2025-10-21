@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Cheezious Testing",
+  title: "Cheezious",
   description: "Created By Hamza Faiz",
 };
 

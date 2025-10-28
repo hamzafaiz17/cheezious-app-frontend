@@ -140,7 +140,7 @@ export default function HeaderS() {
                       </p>
                     </div>
                   </div>
-                  {token === false && user ? (
+                  {loginuser && !tokenExpired ? (
                     <button
                       onClick={() => Logout()}
                       className="mt-10 uppercase border hover:bg-red-500 text-black font-bold px-5 py-2 rounded-sm flex gap-2 cursor-pointer"
@@ -212,7 +212,7 @@ export default function HeaderS() {
         {/* Right - Icons only (no text) */}
         <div className="flex gap-4 items-center">
           <ShoppingCart color="#f15929" />
-          {token === false && user ? (
+          {loginuser && !tokenExpired ? (
             <Link href="/account/edit-profile">
               <User2 className="text-black" color="#f15929" />
             </Link>
@@ -272,7 +272,7 @@ export default function HeaderS() {
                             </p>
                           </div>
                         </div>
-                        {token === false && user ? (
+                        {loginuser && !tokenExpired ? (
                           <button
                             onClick={() => Logout()}
                             className="mt-10 uppercase border hover:bg-red-500 text-black font-bold px-5 py-2 rounded-sm flex gap-2 cursor-pointer"
@@ -536,7 +536,7 @@ export default function HeaderS() {
                   </div>
                 </HoverCardContent>
               </HoverCard>
-              {token === false && user ? (
+              {loginuser && !tokenExpired ? (
                 <Link href="/account/edit-profile">
                   <button className="uppercase bg-yellow-400  hover:bg-[#8c8c8c] text-black font-bold px-5 py-2.5 rounded-sm flex gap-2 cursor-pointer">
                     <User2 />

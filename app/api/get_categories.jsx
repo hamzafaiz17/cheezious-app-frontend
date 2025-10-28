@@ -4,7 +4,7 @@ export default function getCategories(apiEndpoint, setCategories) {
   axios
     .get(apiEndpoint)
     .then(function (response) {
-      toast.success("Products Fetch Successfully");
+      toast.success("Categories Fetch Successfully");
       setCategories(response.data.data);
     })
     .catch(function (error) {

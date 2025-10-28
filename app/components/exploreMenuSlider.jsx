@@ -86,7 +86,6 @@ function ExploreMenuSlider() {
   useEffect(() => {
     getCategories(ApiEndpoint, setCategories);
   }, []);
-
   return (
     <>
       <div className="max-w-[1140px] mx-auto px-4 py-8">
